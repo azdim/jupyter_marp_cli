@@ -187,6 +187,15 @@ Since the project is containarised the required infrastructure is minimal. The f
 ![](#fff)
 
 ---
+
+##### Pipeline summary
+![width:1000px height:12cm](assets/Db.png)
+![bg](#123)
+![](#fff)
+
+
+
+---
 ### GitHub actions pipelines
 
 * The Python package release and Docker image publish has been implemented within a single repository.
@@ -202,14 +211,24 @@ Since the project is containarised the required infrastructure is minimal. The f
 ---
 
 
-##### Pipeline summary
-![width:1000px height:12cm](assets/Db.png)
+##### Python package in PyPI
+![width:1200px height:8cm](assets/python_package.png)
 ![bg](#123)
 ![](#fff)
 
 
 
 ---
+
+##### Docker image in GitHub container registry
+![width:900px height:15cm](assets/docker_image.png)
+![bg](#123)
+![](#fff)
+
+
+
+---
+
 # <!--fit-->  Part 2: DevOps Quick Fire Questions
 ![bg](#123)
 ![](#fff)
