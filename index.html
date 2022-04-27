@@ -52,7 +52,7 @@
 <li data-marpit-fragment="6">The function app function with trigger.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="6" data-paginate="true" data-theme="uncover" data-style="section{
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="5" data-paginate="true" data-theme="uncover" data-style="section{
       font-size: 30px;
 }
 " data-background-color="#123" data-color="#fff" data-marpit-pagination="5" data-marpit-pagination-total="32" style="--paginate:true;--theme:uncover;--style:section{
@@ -62,12 +62,11 @@
 <h5>Deploying the infrastructure using pipelines</h5>
 <h5>What will the CI part of the pipeline look like?</h5>
 <ul>
-<li data-marpit-fragment="1">Re-run CI tasks within a production pipeline environment.</li>
-<li data-marpit-fragment="2">The deployment portion of the pipeline will include required reviewers.</li>
-<li data-marpit-fragment="3">Required reviewers will prevent any unaccounted changes from happening in a production environment.</li>
-<li data-marpit-fragment="4">Once reviewed and approved the infrastructure built within the dev and test environments can be destroyed to prevent technical debt.</li>
-<li data-marpit-fragment="5">An additional step could be to update documentation on a platform such as confluence through the terraform API.</li>
-<li data-marpit-fragment="6">I have created a repository for a function app deployment. This code has not been tested on an azure subscription and is based on my past experience. click <a href="https://github.com/azdim/jupiter_azure_function_app">here</a>.</li>
+<li data-marpit-fragment="1">Sanity check the source code. (shift-left test).</li>
+<li data-marpit-fragment="2">Deploy the terraform defined infrastructure.</li>
+<li data-marpit-fragment="3">Run <a href="https://pester-docs.netlify.app/docs/quick-start">Pester</a> test to test the infrastructure properties.</li>
+<li data-marpit-fragment="4">Test function app trigger.</li>
+<li data-marpit-fragment="5">I have created a repository for a function app deployment. This code has not been tested on an azure subscription and is based on my past experience. click <a href="https://github.com/azdim/jupiter_azure_function_app">here</a>.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-marpit-fragments="5" data-paginate="true" data-theme="uncover" data-style="section{
