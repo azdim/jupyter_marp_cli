@@ -44,11 +44,10 @@ _paginate: false
 ![](#fff)
 ##### Deploying the infrastructure using pipelines
 ##### What will the CI part of the pipeline look like?
-* Re-run CI tasks within a production pipeline environment.
-* The deployment portion of the pipeline will include required reviewers.
-* Required reviewers will prevent any unaccounted changes from happening in a production environment.
-* Once reviewed and approved the infrastructure built within the dev and test environments can be destroyed to prevent technical debt.
-* An additional step could be to update documentation on a platform such as confluence through the terraform API. 
+* Sanity check the source code. (shift-left test).
+* Deploy the terraform defined infrastructure.
+* Run [Pester](https://pester-docs.netlify.app/docs/quick-start) test to test the infrastructure properties.
+* Test function app trigger.
 * I have created a repository for a function app deployment. This code has not been tested on an azure subscription and is based on my past experience. click [here](https://github.com/azdim/jupiter_azure_function_app).
 
 ---
